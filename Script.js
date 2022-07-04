@@ -121,12 +121,12 @@ var score = 0;
 var questionIndex = 0;
 var currentTime = document.querySelector("#currentTime");
 var timer = document.querySelector("#startTime");
-var questionsDiv = document.querySelector("#questionsDiv");
+var questionsDiv = document.querySelector("#questionsBox");
 var wrapper = document.querySelector("#wrapper");
 
 var secondsLeft = 120;
 var holdInterval = 0;
-var penalty = 15;
+var penalty = 5;
 var ulCreate = document.createElement("ul");
 
 timer.addEventListener("click", function () {
@@ -142,6 +142,8 @@ timer.addEventListener("click", function () {
  }else {
   y.style.display ="none";
  }
+
+
 
   if (holdInterval === 0) {
     holdInterval = setInterval(function () {
